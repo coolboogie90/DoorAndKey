@@ -55,6 +55,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: movingPlatform
       objectReference: {fileID: 0}
+    - target: {fileID: 7112802000271070770, guid: dfde6257ed504ff4d84c6d6a70fcb003, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3d5032c2fffcf054d8b3dd48c8a95df8, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfde6257ed504ff4d84c6d6a70fcb003, type: 3}
 --- !u!1 &7938547571150024903 stripped
@@ -62,7 +66,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5585031905013435789, guid: dfde6257ed504ff4d84c6d6a70fcb003, type: 3}
   m_PrefabInstance: {fileID: 2569697323968068938}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1786566172738126035
+--- !u!114 &4249561364478524309
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -74,3 +78,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7da0fa0ac2b4554a9609f9df02d929e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  translation: {x: 10, y: 0}
+  timeToMove: 6
+  player: {fileID: 0}

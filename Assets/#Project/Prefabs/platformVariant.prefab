@@ -21,7 +21,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2583884099029051690, guid: 4b683208d7e24ab47b2bb4d2bd0ff32a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.023
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2583884099029051690, guid: 4b683208d7e24ab47b2bb4d2bd0ff32a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -85,7 +85,7 @@ PlatformEffector2D:
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
-  m_SurfaceArc: 180
+  m_SurfaceArc: 276.1
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
