@@ -8,18 +8,24 @@ public class LevelManager : MonoBehaviour
     public KeyBehaviour key;
     public Door door;
     public string nextLevel;
+    public bool isMenuScene = false;
 
     void Start()
     {
-        if(key==null)
+        if(!isMenuScene)
         {
-            Debug.LogError("LevelManager needs a key.", gameObject); //en rajoutant va pointer à l'objet qui pose problème dans Unity
-        }
-        else
-        {
-            key.manager = this; //le manager s'assigne lui-même à la variable key, "s'il y a une clé, j'en suis le manager"
-        }
+            DataManager.Save(); // on peut le faire car Save() est une méthode static
+            
+            if(key==null)
+            {
+                Debug.LogError("LevelManager needs a key.", gameObject); //en rajoutant va pointer à l'objet qui pose problème dans Unity
+            }
+            else
+            {
+                key.manager = this; //le manager s'assigne lui-même à la variable key, "s'il y a une clé, j'en suis le manager"
+            }
 
+        }
         if(door==null)
         {
             Debug.LogError("LevelManager needs a door.", gameObject); 
